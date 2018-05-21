@@ -1,6 +1,6 @@
 # mycode (Project Title)
 
-One Paragraph of your project description goes here. Describe what you're trying to do. What is the purpose of putting up this repo?
+With this project, I'm just learning the ropes of version control with GitHub.
 
 ## Getting Started
 
@@ -36,7 +36,7 @@ Explain how to run the automated tests for this system. We don't have any, so ju
 
 ## Deployment
 
-Here we might put additional notes about how to deploy on various systems. For now, put a note that we're testing our code on Linux Ubuntu 16.04 LTS. 
+Here we might put additional notes about how to deploy on various systems. For now, put a note that we're testing our code on Linux Ubuntu 16.04 LTS.
 
 ## Built With
 
