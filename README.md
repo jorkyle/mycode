@@ -1,34 +1,35 @@
-# mycode (Project Title)
+# mycode: A Work In Progress
 
 With this project, I'm just learning the ropes of version control with GitHub.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+As of now, my code repo isn't capable of much.  But it will be someday.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them. For now, maybe copy in how to install python and python3 using apt.
+python3
 
 ```
-Give examples
+sudo apt-get install python3
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running. Eventually, maybe we could list Python package requirements here. You can remove this section for now, or make a note to yourself to fill it out later.
+Right now, just download the script and run it from shell.  It doesn't really do anything.  Navigate to the download directory and run it like this:
 
 ```
-Give the example
+python3 input_ip.py
 ```
 
-And repeat other install steps...
+Output is as follows...
 
 ```
-until finished
+Please enter and IPv4 IP Address: 10.10.10.10
+You told me the IPv4 address is: 10.10.10.10
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+That's it, that's all.
 
 ## Running the tests
 
