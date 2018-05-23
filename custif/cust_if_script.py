@@ -13,4 +13,4 @@ elif employer.lower() == 'comtech':
     print('Well done! ComTech also pretty good.')
 else:
     print(employer + ' is a garbage company! You\'re in the wrong room! Get out!')
-print('Exiting script.')
+print('Exiting script.') #Script finished.
