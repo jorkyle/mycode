@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #Written by: Kyle Jorgensen
-#This script will take an IP address...
+#This script will make a list of IP addresses and report it back until user quits.
 
 iplist = [] #Define empty list
 donotuse = 'DO NOT USE THIS ADDRESS!!! (Omitted from list)' #Message for bad values.
