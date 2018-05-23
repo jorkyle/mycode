@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #Written by: Kyle Jorgensen
-#This program will do something...
+#This program will tell the user whether or not a L2 protocol is allowed.
 
 while True:
     print('Please enter a Layer 2 network protocol or press \'Q\' to quit.') #Prompt user for L2 protocol
