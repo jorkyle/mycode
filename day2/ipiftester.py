@@ -12,10 +12,9 @@ while True:
     if ipadd.upper() == 'Q':
         print('Thanks for playing. Goodbye.')
         break
-    if ipadd == '10.10.3.1': #The first no-no address
+    if ipadd == '10.10.3.1' or ipadd == '10.20.5.2': #The no-no addresses
         print(donotuse) #Blast the user with a warning message
-    elif ipadd == '10.20.5.2': #The second no-no address
-        print(donotuse) #Blast the user with a warning message
+        print('Your list remains: ', str(iplist))
     else:
         iplist.append(ipadd) #Append value to previously defined list
         print('IP added. Your list now contains the following: ' + str(iplist))
