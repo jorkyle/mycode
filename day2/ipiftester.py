@@ -3,8 +3,6 @@
 #Written by: Kyle Jorgensen
 #This script will take an IP address...
 
-##Ask user for an IP address
-
 iplist = [] #Define empty list
 donotuse = 'DO NOT USE THIS ADDRESS!!! (Omitted from list)' #Message for bad values.
 
