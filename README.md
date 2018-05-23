@@ -8,36 +8,33 @@ As of now, my code repo isn't capable of much.  But it will be someday.
 
 ### Prerequisites
 
-python3
+Python 3
 
+For installation binaries, download from the following link:
+https://www.python.org/downloads/release/python-365/
+
+Or you can install from CLI:
 ```
 sudo apt-get install python3
 ```
 
 ### Installing
 
-Right now, just download the script and run it from shell.  It doesn't really do anything.  Navigate to the download directory and run it like this:
+Right now, just download the scripts and run from shell. They each have a small job/demonstrate basic functions. Navigate to the appropriate directory and run a script like this:
 
 ```
-python3 input_ip.py
-```
-
-Output is as follows...
-
-```
-Please enter and IPv4 IP Address: 10.10.10.10
-You told me the IPv4 address is: 10.10.10.10
+python3 [script_name].py
 ```
 
 That's it, that's all.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system. We don't have any, so just make a note that they are none at this time.
+Eventually I will explain how to run the automated tests for this system. We don't have any at this time.
 
 ## Deployment
 
-Here we might put additional notes about how to deploy on various systems. For now, put a note that we're testing our code on Linux Ubuntu 16.04 LTS.
+Testing with Python 3.6.5 under GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16).
 
 ## Built With
 
@@ -45,11 +42,11 @@ Here we might put additional notes about how to deploy on various systems. For n
 
 ## Contributing
 
-Here you could make notes about how others might contribute to your code. For right now, a friendly message saying you'll accept any and all help from other coders would be great!
+rzfeeser @ Alta3 (labs)
 
 ## Authors
 
-* **Your Name** - *Initial work* - [YourWebsite](https://example.com/)
+* **Kyle Jorgensen** - *Initial work* - [YourWebsite](https://github.com/jorkyle/)
 
 ## License
 
@@ -57,6 +54,4 @@ This project is licensed under the GNUv3 - see the [LICENSE.md](LICENSE.md) file
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* rzfeeser for the labs
