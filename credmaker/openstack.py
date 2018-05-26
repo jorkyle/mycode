@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
 #Written by: Kyle Jorgensen
-#This script will append the admin.rc file wi user-entered information.
+#This script will append the admin.rc file with user-entered information.
 
-outFile = open('admin.rc', 'a')
+outFile = open('admin.rc', 'a') #Define output file
+
+##Collect information and write it to the file.
 print('What is the OS_AUTH_URL?')
 osAUTH = input()
 print('export OS_AUTH_URL=' + osAUTH, file=outFile)
