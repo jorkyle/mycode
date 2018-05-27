@@ -9,7 +9,7 @@ class Player: #Set up the class
     def __init__(self): #toString
         self.dice = [] #define empty list
 
-    def roll(self): #define the roll method
+    def roll(self): #define the roll function
         self.dice = [] #reset the list
         for i in range(3): #Roll three times
             self.dice.append(randint(1,6)) #Choose an int between 1 and 6 and append to list self.dice
