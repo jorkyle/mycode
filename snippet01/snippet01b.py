@@ -5,7 +5,7 @@
 
 print('Hello. This program reserves a block of IP addresses, 10 at a time.')
 k_ip_addr = input('What is your starting IP? ') #Accept a string input (IPv4 address) from a user
-k_ip_range = input('How many addresses would you like to reserve?')
+k_ip_range = input('How many addresses would you like to reserve? ')
 
 k_ip_split = k_ip_addr.split('.') #1) Remove the dot notation with .split()
 ##Taking the range-1 approach yields accurate results since the reported list will be inclusive
