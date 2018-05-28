@@ -34,9 +34,9 @@ class Room(object):
         elif location == [1,1]:
             return ne_room.describe_room()
         elif location == [-1,-1]:
-            return north_room.describe_room()
+            return sw_room.describe_room()
         elif location == [1,-1]:
-            return south_room.describe_room()
+            return se_room.describe_room()
         else:
             print('I have no idea what I just did.')
 
@@ -96,11 +96,10 @@ There are exits to the North and West.
 #west_room.paths = [0, 0, 0, start_room]
 #east_room.paths = [0, start_room, 0, 0]
 
-commands = ['go north,west,south, or east']
 print (Room.room_coords(), end='')
 while True:
-    command = input('Where do you want to go? (north, south, east, or west... or quit) ')
-    if command == "north":
+    command = input('Where do you want to go? (or \'look\' again or \'quit\')\n')
+    if command.lower() == "north":
         if abs(location[1] + 1) > 1:
             print("You cannot go that way.")
 
@@ -108,7 +107,7 @@ while True:
             location[1] += 1
             print('Your coordinates: ' + str(location), end='')
             print (Room.room_coords(), end='')
-    elif command == "south":
+    elif command.lower() == "south":
         if abs(location[1] - 1) > 1:
             print("You cannot go that way.")
 
@@ -117,7 +116,7 @@ while True:
             print('Your coordinates: ' + str(location), end='')
             print (Room.room_coords(), end='')
 
-    elif command == "east":
+    elif command.lower() == "east":
         if abs(location[0] + 1) > 1:
             print("You cannot go that way.")
 
@@ -126,7 +125,7 @@ while True:
             print('Your coordinates: ' + str(location), end='')
             print (Room.room_coords(), end='')
 
-    elif command == "west":
+    elif command.lower() == "west":
         if abs(location[0] - 1) > 1:
             print("You cannot go that way.")
 
@@ -135,9 +134,10 @@ while True:
             print('Your coordinates: ' + str(location), end='')
             print (Room.room_coords(), end='')
 
-    elif command == "quit":
+    elif command.lower() == "quit":
         break
-
+    elif command.lower() == "look":
+        print (Room.room_coords(), end='')
     else:
         print("I Don't Understand that direction")
 print("Thanks for playing.")
