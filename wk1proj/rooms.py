@@ -5,20 +5,20 @@
 #north,south,east,west. Descriptions inspired by George R.R. Martin's Song of Ice and Fire.
 #Code is a little clunky at this point but it works nicely.
 
-x = 0
+x = 0 #Set coordinates
 y = 0
-location = [x,y]
+location = [x,y] #set location variable
 
-class Room(object):
-    def __init__(self,name,coords,description):
+class Room(object): #setup class for rooms
+    def __init__(self,name,coords,description): #toString
         self.name = name
         self.coords = location
         self.description = description
-        self.paths = []
-    def describe_room(self):
+        self.paths = [] #Not in use yet
+    def describe_room(self): #function to return room description
         return self.description
 
-    def room_coords():
+    def room_coords(): #function to return room description for give coords
         if location == [0,0]:
             return start_room.describe_room()
         elif location == [-1,0]:
@@ -40,7 +40,7 @@ class Room(object):
         else:
             print('I have no idea what I just did.')
 
-
+##Big block of room names, coords, and descriptions, respectively
 start_room = Room('Start',[0,0],'''
 You are in TLG Learning.  You feel like you've been here before...
 Perhaps forever?  The feeling of déjà vu is overwhelming.
@@ -92,55 +92,46 @@ You are in the Southeast. Here in Sunspear, House Martell rules from their
 castle. Beware the treacherous Sand Snakes!
 There are exits to the North and West.
 ''')
-#start_room.paths = [0, west_room, 0, east_room]
-#west_room.paths = [0, 0, 0, start_room]
-#east_room.paths = [0, start_room, 0, 0]
 
-print (Room.room_coords(), end='')
-while True:
-    command = input('Where do you want to go? (or \'look\' again or \'quit\')\n')
-    if command.lower() == "north":
-        if abs(location[1] + 1) > 1:
+print (Room.room_coords(), end='') #Tell user where they start
+while True: #Loop until user quits
+    command = input('Where do you want to go? (or \'look\' again or \'quit\')\n') #Prompt the user
+    if command.lower() == "north": #lowercase for caps fault tolerance
+        if abs(location[1] + 1) > 1: #if chosen move would put user out of range
             print("You cannot go that way.")
-
         else:
-            location[1] += 1
-            print('Your coordinates: ' + str(location), end='')
-            print (Room.room_coords(), end='')
+            location[1] += 1 #increment y coord
+            print('Your coordinates: ' + str(location), end='') #report coords
+            print (Room.room_coords(), end='') #print room description
+
     elif command.lower() == "south":
         if abs(location[1] - 1) > 1:
             print("You cannot go that way.")
-
         else:
-            location[1] -= 1
+            location[1] -= 1 #decrement y coord
             print('Your coordinates: ' + str(location), end='')
             print (Room.room_coords(), end='')
 
     elif command.lower() == "east":
         if abs(location[0] + 1) > 1:
             print("You cannot go that way.")
-
         else:
-            location[0] += 1
+            location[0] += 1 #increment x coord
             print('Your coordinates: ' + str(location), end='')
             print (Room.room_coords(), end='')
 
     elif command.lower() == "west":
         if abs(location[0] - 1) > 1:
             print("You cannot go that way.")
-
         else:
-            location[0] -= 1
+            location[0] -= 1 #decrement x coord
             print('Your coordinates: ' + str(location), end='')
             print (Room.room_coords(), end='')
 
     elif command.lower() == "quit":
-        break
+        break #exit the loop
     elif command.lower() == "look":
-        print (Room.room_coords(), end='')
+        print (Room.room_coords(), end='') #print description again
     else:
-        print("I Don't Understand that direction")
-print("Thanks for playing.")
-
-#    except:
-#        print("I need a direction such as north,east,south or west.")
+        print("I Don't Understand that direction") #for invalid moves
+print("Thanks for playing.") #exit message
