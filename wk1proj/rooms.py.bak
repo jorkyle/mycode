@@ -93,6 +93,7 @@ castle. Beware the treacherous Sand Snakes!
 There are exits to the North and West.
 ''')
 
+print(se_room.__dict__.values())
 print (Room.room_coords(), end='') #Tell user where they start
 while True: #Loop until user quits
     command = input('Where do you want to go? (or \'look\' again or \'quit\')\n') #Prompt the user

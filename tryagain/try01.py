@@ -6,6 +6,7 @@ try:
     answersnowobj = open(answersnow, 'w')
 except:
     print('Error with that file name!')
+    continue
 else:
     print('and every where that mary went', file=answersnowobj)
     print('The lamb was sure to go', file=answersnowobj)
