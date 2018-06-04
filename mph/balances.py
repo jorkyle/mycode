@@ -11,6 +11,7 @@
 import requests
 import json
 import pprint
+import getpass
 
 ##List of current currencies supported by Mining Pool Hub
 symbols = {
@@ -60,7 +61,7 @@ symbols = {
 url = 'https://miningpoolhub.com/index.php?'
 api_method = 'page=api&action='
 balance = 'getuserallbalances'
-mykey = '&api_key=' + input('Input your API Key: ')
+mykey = '&api_key=' + getpass.getpass('Input your API Key: ')
 
 ##This block combines the specific API function and loads the JSON.
 balance_url = url + api_method + balance + mykey
