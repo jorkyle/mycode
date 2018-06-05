@@ -7,7 +7,7 @@
 #Plan to add functionality for other API calls from Mining Pool Hub using this
 #same framework.
 
-##Import the following for web request, json, and pretty printing
+##Import the following for web request, json, pretty printing, getpass for API key
 import requests
 import json
 import pprint
